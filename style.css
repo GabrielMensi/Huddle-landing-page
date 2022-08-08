@@ -1,0 +1,169 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-color: var(--violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  color: white;
+}
+
+.logo-img {
+  width: 125px;
+  height: 30px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main-img {
+  width: 300px;
+  height: 215px;
+  margin-top: 60px;
+}
+
+.container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  width: 325px;
+  height: 280px;
+}
+
+.container .title-container .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container .title-container .description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.container .title-container button {
+  border: none;
+  border-radius: 30px;
+  width: 205px;
+  height: 45px;
+  color: var(--violet);
+}
+
+.redes {
+  width: 35px;
+  height: 35px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.redes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 60px;
+  }
+  .logo-img {
+    width: 215px;
+    height: 45px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1300px;
+    height: 520px;
+  }
+  .container .main-img {
+    width: 700px;
+    height: 505px;
+  }
+  .container .title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 700px;
+    height: 505px;
+    padding: 60px;
+  }
+  .container .title-container .title {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: start;
+  }
+  .container .title-container .description {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+  }
+  .container .title-container button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 215px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .redes-container {
+    margin-top: 100px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+/*# sourceMappingURL=style.css.map */

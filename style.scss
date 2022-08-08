@@ -1,0 +1,125 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+// Mobilie First
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--violet);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    color: white;
+}
+.logo-img {
+    width: 125px;
+    height: 30px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-img {
+        width: 300px;
+        height: 215px;
+        margin-top: 60px;
+    }
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        width: 325px;
+        height: 280px;
+        
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .description {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 26px;
+        }
+        button {
+            border: none;
+            border-radius: 30px;
+            width: 205px;
+            height: 45px;
+            color: var(--violet);
+        }
+    }
+}
+.redes {
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    margin: 10px;
+    cursor: pointer;
+}
+.redes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+// --- a partir de 1440px
+
+@media only screen and (min-width: 1440px) {
+    body {
+        padding: 60px;
+    }
+    .logo-img {
+        width: 215px;
+        height: 45px;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 1300px;
+        height: 520px;
+        .main-img {
+            width: 700px;
+            height: 505px;
+        }
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 700px;
+            height: 505px;
+            padding: 60px;
+            .title {
+                font-size: 34px;
+                font-weight: 600;
+                text-align: start;
+            }
+            .description {
+                font-size: 18px;
+                font-weight: 400;
+                text-align: start;
+            }
+            button {
+                align-self: flex-start;
+                width: 215px;
+                height: 70px;
+                font-size: 20px;
+            }
+        }
+    }
+    .redes-container {
+        margin-top: 100px;
+        justify-content: flex-end;
+    }
+}
